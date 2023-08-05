@@ -13,13 +13,32 @@ const SignIn = () => {
   }
   return (
     <div className="h-screen w-screen flex flex-col justify-center items-center">
-      <div className="h-screen w-[90%] sm:w-[80%] flex flex-col justify-center items-center">
+      <div className="relative h-screen w-[90%] sm:w-[80%] flex flex-col justify-center items-center">
+        {/* Back Arrow */}
+        <div className="absolute top-[3%] left-0 flex justify-center items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="10"
+            viewBox="0 0 14 10"
+            fill="none"
+            className="w-[1rem] h-[1rem]"
+          >
+            <path
+              d="M5 1L1 5M1 5L5 9M1 5L13 5"
+              stroke="#000E08"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
         {/*heading  */}
-        <div className="flex flex-col w-full">
+        <div className=" mt-10 flex flex-col w-full">
           {/* heading */}
           <div className="">
-            <h1 className="text-[1.5rem] lg:text-[1.75rem] not-italic text-[#69235B] font-bold leading-5 text-center">
-              <span className="relative before:absolute before:z-[-100] before:top-[70%] before:left-0 before:bg-[#FFC746] before:w-[106%] before:h-[35%]">
+            <h1 className="font-[kumbh] text-[1.5rem] lg:text-[1.75rem] not-italic text-[#69235B] font-bold leading-5 text-center">
+              <span className="relative before:absolute before:z-[-100] before:top-[60%] before:left-0 before:bg-[#FFC746] before:w-[106%] before:h-[35%]">
                 Log in
               </span>{" "}
               to Mokx
@@ -27,7 +46,7 @@ const SignIn = () => {
           </div>
           {/* paragraph */}
           <div className="mt-4 flex justify-center">
-            <p className="w-[90%] md:w-[70%] lg:w-[65%] text-[#69235B] text-center text-[0.875rem] md:text-[1rem] lg:text-[1.125rem] font-light leading-5 tracking-[0.00625rem]">
+            <p className="font-[inter] w-[90%] md:w-[70%] lg:w-[65%] text-[#69235B] text-center text-[0.875rem] md:text-[1rem] lg:text-[1.125rem] font-light leading-5 tracking-[0.00625rem]">
               Welcome back! Sign in using your social account or email to
               continue us
             </p>
@@ -46,7 +65,7 @@ const SignIn = () => {
           </div>
         </div>
         <div className="w-[90%] md:w-[70%] lg:w-[65%] my-10 flex items-center before:border-t-2 before:border-[#CDD1D0] before:z-0 before:w-[45%] after:border-t-2 after:border-[#CDD1D0] after:w-[45%]">
-          <p className="text-center mx-4 tracking-[0.00625rem] leading-5 font-thin text-[1.125rem] text-[#69235B]">
+          <p className="font-[inter] text-center mx-4 tracking-[0.00625rem] leading-5 font-thin text-[1.125rem] text-[#69235B]">
             OR
           </p>
         </div>
@@ -57,37 +76,37 @@ const SignIn = () => {
             <div className="flex flex-col w-full flex-start">
               <label
                 htmlFor="email"
-                className="text-[#69235B] font-medium text-left text-[1rem] lg:text-[1.125rem] not-italic leading-4 tracking-wider"
+                className="font-[inter] text-[#69235B] font-medium text-left text-[1rem] lg:text-[1.125rem] not-italic leading-4 tracking-wider"
               >
                 Your Email
               </label>
               <input
                 required
                 type="email"
-                className="mt-[0.875rem] border-b-2 border-[#CDD1D0] outline-none pb-[0.5rem] text-lg lg:text-xl"
+                className="font-[poppins] mt-[0.875rem] font-normal border-b-2 border-[#CDD1D0] outline-none pb-[0.5rem] text-lg lg:text-xl"
               />
             </div>
             <div className="flex flex-col w-full flex-start mt-[3.5rem]">
               <label
                 htmlFor="password"
-                className="text-[#69235B] font-medium text-left text-[1rem] lg:text-[1.125rem] not-italic leading-4 tracking-wider"
+                className="font-[inter] text-[#69235B] font-medium text-left text-[1rem] lg:text-[1.125rem] not-italic leading-4 tracking-wider"
               >
                 Your Password
               </label>
               <input
                 required={true}
                 type="password"
-                className="mt-[0.875rem] border-b-2 border-[#CDD1D0] outline-none pb-[0.5rem] text-lg lg:text-xl"
+                className="font-[poppins] font-normal mt-[0.875rem] border-b-2 border-[#CDD1D0] outline-none pb-[0.5rem] text-lg lg:text-xl"
               />
             </div>
             <div className="flex flex-col mt-[7rem] lg:mt-[7rem]">
               <button
                 type="submit"
-                className="w-full rounded-[0.625rem] bg-[#FFC746] text-[1.25rem] text-[#69235B] not-italic font-medium border border-[#FFC746] px-10 py-2"
+                className="font-[kumbh] w-full rounded-[0.625rem] bg-[#FFC746] text-[1.25rem] text-[#69235B] not-italic font-medium border border-[#FFC746] px-10 py-2"
               >
                 Login
               </button>
-              <p className="mt-4 text-[1.25rem] text-center text-[#FFC746] not-italic font-normal leading-4 tracking-[0.00625rem]">
+              <p className="font-[kumbh] mt-4 text-[1.25rem] text-center text-[#FFC746] not-italic font-normal leading-4 tracking-[0.00625rem]">
                 Forgot Password?
               </p>
             </div>

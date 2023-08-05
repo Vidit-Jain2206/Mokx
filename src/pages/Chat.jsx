@@ -4,6 +4,7 @@ import Message from "../components/Message";
 import group from "../assets/Group.png";
 import send from "../assets/send.png";
 import mic from "../assets/mic.png";
+import { BsArrowLeft } from "react-icons/bs";
 
 // import { BsArrowLeft } from "react-icons/bs";
 const Chat = () => {
@@ -11,12 +12,28 @@ const Chat = () => {
     <div className="h-auto max-w-screen flex flex-col mt-4">
       {/* header */}
       <header className="w-full h-[4.5rem] bg-white flex justify-center items-center">
-        <div className="w-[90%] md:w-[90%] h-[90%] mx-auto flex flex-row justify-between items-center">
+        <div className="w-[95%] md:w-[95%] h-[90%] mx-auto flex flex-row justify-between items-center">
           {/* profile */}
           <div className="flex flex-row w-[60%]">
             {/* icon - back arrow */}
-            <div className="w-[1.5rem] h-[1.5rem] sm:w-[2rem] sm:h-[2rem] flex justify-center items-center">
-              {/* <BsArrowLeft className="text-[#69235B]" /> */}
+
+            <div className="flex justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                className="ml-[-0.2rem] md:ml-[-0.4rem] mr-[0.3rem] md:mr-[0.5rem]  sm:w-[2rem] sm:h-[2rem]"
+              >
+                <path
+                  d="M10 8L6 12M6 12L10 16M6 12L18 12"
+                  stroke="#69235B"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
             {/* profile,name */}
             <div className="flex flex-row space-x-3 sm:space-x-4 justify-center items-center">
@@ -31,10 +48,10 @@ const Chat = () => {
 
               {/* name */}
               <div className="flex flex-col space-y-1 sm:space-y-2 items-start">
-                <h2 className=" font-medium not-italic text-[1rem] sm:text-[1.25rem] leading-[1rem] text-[#69235B]">
+                <h2 className=" font-[Raleway] font-medium not-italic text-[1rem] sm:text-[1.25rem] leading-[1rem] text-[#69235B]">
                   Arya
                 </h2>
-                <p className="text-[#797C7B] text-[0.75rem] sm:text-[1rem] font-thin leading-[0.75rem]">
+                <p className="font-[inter] text-[#797C7B] text-[0.75rem] sm:text-[1rem] font-thin leading-[0.75rem]">
                   Vedic AI Bot
                 </p>
               </div>
@@ -43,7 +60,7 @@ const Chat = () => {
 
           {/* languages */}
           <div className="mr-[1rem]">
-            <h2 className="text-[#FBBC04] text-[1rem] sm:text-[1.25rem] font-extrabold not-italic leading-[1rem]">
+            <h2 className="font-[Mukta] text-[#FBBC04] text-[1rem] sm:text-[1.25rem] font-extrabold not-italic leading-[1rem]">
               A<span className="font-light">/क</span>
             </h2>
           </div>
@@ -68,8 +85,8 @@ Whether you seek guidance on mantras, general life advice, or specific Vedic int
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="19"
-                height="21"
+                width="18"
+                height="20"
                 viewBox="0 0 19 21"
                 fill="none"
               >
@@ -79,25 +96,25 @@ Whether you seek guidance on mantras, general life advice, or specific Vedic int
                 />
               </svg>
             </span>
-            <p className="text-[#69235B] text-[1rem] font-normal not-italic leading-none tracking-[0.015rem]">
+            <p className="font-[kumbh] text-[#69235B] text-[1rem] font-normal not-italic leading-none tracking-[0.015rem]">
               You can ask queries like:
             </p>
           </div>
 
           <div className="mt-3 mb-6 w-[83%] sm:w-[70%] md:w-[60%] lg:w-[50%] mx-auto flex flex-col justify-center items-center space-y-1">
-            <p className="text-center w-full mx-auto pl-[1rem] pr-[0.25rem] py-[0.8rem] bg-[#FBBC04] rounded-[1.1875rem] text-[0.75rem] md:text-[0.865rem] font-normal leading-none tracking-[0.01125rem]">
+            <p className="font-[inter] text-center w-full mx-auto pl-[1rem] pr-[0.25rem] py-[0.8rem] bg-[#FBBC04] rounded-[1.1875rem] text-[0.75rem] md:text-[0.865rem] font-normal leading-none tracking-[0.01125rem]">
               What is the mantra in Rigveda 10.2.3?
             </p>
-            <p className="text-center w-full mx-auto pl-[1rem] pr-[0.25rem] py-[0.8rem] bg-[#FBBC04] rounded-[1.1875rem] text-[0.75rem] md:text-[0.865rem] font-normal leading-none tracking-[0.01125rem]">
+            <p className="font-[inter] text-center w-full mx-auto pl-[1rem] pr-[0.25rem] py-[0.8rem] bg-[#FBBC04] rounded-[1.1875rem] text-[0.75rem] md:text-[0.865rem] font-normal leading-none tracking-[0.01125rem]">
               What are the prescribed Vedic remedies for snake bites?
             </p>
-            <p className="text-center w-full mx-auto pl-[1rem] pr-[0.25rem] py-[0.8rem] bg-[#FBBC04] rounded-[1.1875rem] text-[0.75rem] md:text-[0.865rem] font-normal leading-none tracking-[0.01125rem]">
+            <p className="font-[inter] text-center w-full mx-auto pl-[1rem] pr-[0.25rem] py-[0.8rem] bg-[#FBBC04] rounded-[1.1875rem] text-[0.75rem] md:text-[0.865rem] font-normal leading-none tracking-[0.01125rem]">
               Can you tell me the significance of the Gayatri Mantra?
             </p>
           </div>
           <div className="w-[96.5%] mx-auto flex justify-center items-center space-x-1">
             <img src={group} alt="" className="w-[0.85rem] h-[0.85rem]" />
-            <p className="text-[#69235B] text-[0.8125rem] font-normal not-italic leading-none tracking-[0.01219rem]">
+            <p className="font-[ABeeZee] text-[#69235B] text-[0.9rem] font-normal not-italic leading-none tracking-[0.01219rem]">
               Limitation: May struggle with complex queries.
             </p>
           </div>
@@ -179,7 +196,7 @@ Whether you seek guidance on mantras, general life advice, or specific Vedic int
             }}
             type="text"
             placeholder="Write your message"
-            className="w-full rounded-[1.875rem] text-[0.875rem]  py-4 px-5 outline-none"
+            className="font-[inter] w-full rounded-[1.875rem] text-[0.875rem]  py-4 px-5 outline-none"
           />
           {/* send and mic button */}
           <div className="absolute top-0 left-0 w-[95%] md:w-[98%] h-full flex justify-end items-center space-x-1">

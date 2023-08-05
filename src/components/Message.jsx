@@ -35,7 +35,7 @@ const Message = ({ pic, message, time, isUser, className }) => {
                   {element}
                 </div>
                 {time && id === message.length - 1 && (
-                  <p className="p-2 text-right text-[0.625rem] font-thin leading-[0.625rem] text-[#797C7B] not-italic">
+                  <p className="font-[inter] p-2 text-right text-[0.625rem] font-thin leading-[0.625rem] text-[#797C7B] not-italic">
                     {time}
                   </p>
                 )}

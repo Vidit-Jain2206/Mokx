@@ -11,7 +11,7 @@ const Home = () => {
 
       <Link
         to={"/vedas"}
-        className="text-[#69235B] text-center text-[1.25rem] not-italic font-semibold leading-normal hover:underline"
+        className="font-kumbh text-[#69235B] text-center text-[1.25rem] not-italic font-semibold leading-normal hover:underline"
       >
         Back to Vedas 🕉️
       </Link>
