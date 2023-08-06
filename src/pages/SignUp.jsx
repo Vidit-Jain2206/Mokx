@@ -25,7 +25,7 @@ const SignUp = () => {
     }));
   }
   return (
-    <div className="h-screen w-screen flex flex-col justify-center items-center">
+    <div className="h-screen max-w-[1440px] flex flex-col justify-center items-center">
       <div className="relative h-screen w-[90%] sm:w-[80%] flex flex-col justify-center items-center">
         {/* Back Arrow */}
         <div className="absolute top-[4%] left-0 flex justify-center items-center">
@@ -88,7 +88,7 @@ const SignUp = () => {
                 id="name"
                 required
                 type="text"
-                className="font-[Poppins] border-b-[0.125rem] font-[Poppins] border-[#CDD1D0] outline-none pt-[0.75rem] lg:pt-[1rem] pb-[0.5rem] text-[1rem] lg:text-xl"
+                className="font-[Poppins] border-b-[0.125rem] border-[#CDD1D0] outline-none pt-[0.75rem] lg:pt-[1rem] pb-[0.5rem] text-[1rem] lg:text-xl"
               />
             </div>
             <div className="mt-6 flex flex-col w-full flex-start">
